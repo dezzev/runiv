@@ -1,0 +1,36 @@
+<head>
+
+  <meta charset="utf-8">
+  
+  <link href="{{url_for('static', filename='styles/main.css')}}" rel="stylesheet">
+  
+  <link href="{{url_for('static', filename='styles/index.css')}}" rel="stylesheet">
+  
+  <title>Runiv</title>
+  
+  
+</head>
+
+
+
+<body><center>
+
+
+  <div class="link-c1">
+    <div class="link-c2">
+        <div class="link-c3">
+            <input id="url" autofocus placeholder="Вставьте сюда ссылку для сокращения">
+            <button id="short">Сократить</button>
+            <div id="notify" class="link-notify">
+                <div class="alt-button-2" id="shorturl"></div><a href="https://github.com/dezzev/runiv">
+                <button class="alt-button">Помочь проекту?</button></a>
+                <div class="link-hint" id="hint"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+<script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+
+
+</center></body>
