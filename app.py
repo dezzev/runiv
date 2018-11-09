@@ -47,9 +47,10 @@ def urlshort():
     print(geturl)
 
     genid = "".join(random.sample("abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ", random.randrange(4,6)))
+    short = Short.select().where(Short.url == geturl)
 
-    if Short.select().where(Short.url == geturl):
-        return jsonify({"tourl": generate, "warn": "this url exists"})
+    if short:
+        return jsonify({"tourl": short.get().short, "warn": "this url exists"})
     else:
         u = Short(url=geturl, short=genid)
         u.save()
