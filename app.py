@@ -11,7 +11,10 @@ import config
 
 from peewee import *
 
+
+
 # Модели
+
 
 db = SqliteDatabase('runiv.db')
 
@@ -23,7 +26,9 @@ class Short(Model):
         database = db
 
 
+
 # Приложение
+
 
 ip_to_use = ""
 
