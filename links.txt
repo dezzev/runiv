@@ -1,3 +1,0 @@
-url:test.com,short:dvhk
-url:test1.com,short:ISRi
-url:test2.com,short:sJCj1
